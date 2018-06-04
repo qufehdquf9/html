@@ -4,6 +4,19 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./htmltest.css" >
   <link rel="stylesheet" href="normalize.css" >
+  <script>
+  window.addEventListener('scroll',function(){
+  var jbOffset = document.getElementById("nav");
+
+  if(window.scrollY > jbOffset.offsetTop){
+
+      document.getElementById("nav").className="container, fixed_nav";
+  }
+  else{
+      document.getElementById("nav").className="container";
+  }
+});
+  </script>
 </head>
 <body>
   <section class="center background">
